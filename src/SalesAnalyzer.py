@@ -6,7 +6,7 @@ import logging
 
 # Ensure the visual aesthetics of plots
 sns.set(style="whitegrid")
-
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 class SalesAnalyzer:
     def __init__(self, train_df, test_df, store_df):
         self.train_df = train_df
